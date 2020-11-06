@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  proxy:
+    build: .
+    ports:
+    - "8888:8888"
+    volumes:
+    - ./squid.conf:/etc/squid.conf
